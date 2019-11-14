@@ -1,0 +1,72 @@
+  2019.11.14.11.58.25  :  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  2019.11.14.11.58.25  :  INFO  :  LOG FILE GENERATED 
+  2019.11.14.11.58.25  :  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  2019.11.14.11.58.25  :  INFO  :  Loading configuration data is completed
+  2019.11.14.11.58.25  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.58.25  :  INFO : Test Case Execution : Test Execution STARTED for Test Case - [ accessToken ]
+  2019.11.14.11.58.25  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.58.40  :  INFO : getAccess_Method 		: Post API Call completed for getting access token. Post Data : [ {password=password123, username=admin} ]
+  2019.11.14.11.58.40  :  PASS : validateStatusCode_Method 	: Status Code : Expected : [ 200 ] : Actual : [ 200 ]
+  2019.11.14.11.58.49  :  PASS : getAccessToken_Method	 	: AccessToken : Token ID : [ aed98a9f5d8822b ] Generated for the user - [ admin ]
+  2019.11.14.11.58.49  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.58.49  :  INFO : Test Case Execution : Test Execution COMPLETED for Test Case - [ accessToken ]
+  2019.11.14.11.58.49  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.58.49  :  INFO : Test Case Execution : Test Execution STARTED for Test Case - [ API_Post ]
+  2019.11.14.11.58.49  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.58.51  :  INFO : addNewBooking_Method		: Post API Call completed for adding new Booking. Post Data : [ {firstname=John, additionalneeds=Breakfast, bookingdates={checkin=2018-01-01, checkout=2018-01-01}, totalprice=111, depositpaid=true, lastname=Doe} ]
+  2019.11.14.11.58.51  :  PASS : validateStatusCode_Method 	: Status Code : Expected : [ 200 ] : Actual : [ 200 ]
+  2019.11.14.11.58.58  :  PASS : verifyFieldvalues_Method	: Field Name - [ firstname ] : Expected Value - [ John ] : Actual Value - [ John ]
+  2019.11.14.11.58.58  :  PASS : verifyFieldvalues_Method	: Field Name - [ additionalneeds ] : Expected Value - [ Breakfast ] : Actual Value - [ Breakfast ]
+  2019.11.14.11.58.58  :  PASS : verifyFieldvalues_Method	: Field Name - [ bookingdates ] : Expected Value - [ {checkin=2018-01-01, checkout=2018-01-01} ] : Actual Value - [ {checkin=2018-01-01, checkout=2018-01-01} ]
+  2019.11.14.11.58.58  :  PASS : verifyFieldvalues_Method	: Field Name - [ totalprice ] : Expected Value - [ 111 ] : Actual Value - [ 111 ]
+  2019.11.14.11.58.58  :  PASS : verifyFieldvalues_Method	: Field Name - [ depositpaid ] : Expected Value - [ true ] : Actual Value - [ true ]
+  2019.11.14.11.58.58  :  PASS : verifyFieldvalues_Method	: Field Name - [ lastname ] : Expected Value - [ Doe ] : Actual Value - [ Doe ]
+  2019.11.14.11.59.04  :  INFO : getBookingID_Method	 	: REQUEST DATA : [ {firstname=John, additionalneeds=Breakfast, bookingdates={checkin=2018-01-01, checkout=2018-01-01}, totalprice=111, depositpaid=true, lastname=Doe} ]
+  2019.11.14.11.59.04  :  INFO : getBookingID_Method 		: RESPONSE : [ {"bookingid":13,"booking":{"firstname":"John","lastname":"Doe","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2018-01-01"},"additionalneeds":"Breakfast"}} ]
+  2019.11.14.11.59.04  :  PASS : getBookingID_Method 		: New Booking : ID [ 13] added to API 
+  2019.11.14.11.59.04  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.59.04  :  INFO : Test Case Execution : Test Execution COMPLETED for Test Case - [ API_Post ]
+  2019.11.14.11.59.04  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.59.04  :  INFO : Test Case Execution : Test Execution STARTED for Test Case - [ API_Put ]
+  2019.11.14.11.59.04  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.59.05  :  INFO : updateBooking_Method 		: Put API Call completed for updating Booking. Post Data : [ {firstname=John, additionalneeds=Breakfast, bookingdates={checkin=2018-01-01, checkout=2018-01-01}, totalprice=222, depositpaid=true, lastname=Doe} ]
+  2019.11.14.11.59.05  :  INFO : updateBooking_Method 		: REQUEST DATA : [ {firstname=John, additionalneeds=Breakfast, bookingdates={checkin=2018-01-01, checkout=2018-01-01}, totalprice=222, depositpaid=true, lastname=Doe} ]
+  2019.11.14.11.59.05  :  INFO : updateBooking_Method 		: RESPONSE : [ {"firstname":"John","lastname":"Doe","totalprice":222,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2018-01-01"},"additionalneeds":"Breakfast"} ]
+  2019.11.14.11.59.05  :  PASS : updateBooking_Method 		: Booking ID [ 13] updated in API 
+  2019.11.14.11.59.05  :  PASS : validateStatusCode_Method 	: Status Code : Expected : [ 200 ] : Actual : [ 200 ]
+  2019.11.14.11.59.05  :  PASS : verifyFieldvalues_Method	: Field Name - [ firstname ] : Expected Value - [ John ] : Actual Value - [ John ]
+  2019.11.14.11.59.05  :  PASS : verifyFieldvalues_Method	: Field Name - [ additionalneeds ] : Expected Value - [ Breakfast ] : Actual Value - [ Breakfast ]
+  2019.11.14.11.59.05  :  INFO : verifyFieldvalues_Method 	: Field Name - [ bookingdates ]
+  2019.11.14.11.59.05  :  PASS : verifyFieldvalues_Method	: Field Name - [ checkin ] : Expected Value - [ 2018-01-01 ] : Actual Value - [ 2018-01-01 ]
+  2019.11.14.11.59.05  :  PASS : verifyFieldvalues_Method	: Field Name - [ checkout ] : Expected Value - [ 2018-01-01 ] : Actual Value - [ 2018-01-01 ]
+  2019.11.14.11.59.05  :  PASS : verifyFieldvalues_Method	: Field Name - [ totalprice ] : Expected Value - [ 222 ] : Actual Value - [ 222 ]
+  2019.11.14.11.59.05  :  PASS : verifyFieldvalues_Method	: Field Name - [ depositpaid ] : Expected Value - [ true ] : Actual Value - [ true ]
+  2019.11.14.11.59.05  :  PASS : verifyFieldvalues_Method	: Field Name - [ lastname ] : Expected Value - [ Doe ] : Actual Value - [ Doe ]
+  2019.11.14.11.59.05  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.59.05  :  INFO : Test Case Execution : Test Execution COMPLETED for Test Case - [ API_Put ]
+  2019.11.14.11.59.05  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.59.05  :  INFO : Test Case Execution : Test Execution STARTED for Test Case - [ API_Get ]
+  2019.11.14.11.59.05  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.59.07  :  PASS : getBooking_Method 		: Response DATA : [ {"firstname":"John","lastname":"Doe","totalprice":222,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2018-01-01"},"additionalneeds":"Breakfast"} ]
+  2019.11.14.11.59.07  :  PASS : validateStatusCode_Method 	: Status Code : Expected : [ 200 ] : Actual : [ 200 ]
+  2019.11.14.11.59.07  :  PASS : verifyFieldvalues_Method	: Field Name - [ firstname ] : Expected Value - [ John ] : Actual Value - [ John ]
+  2019.11.14.11.59.07  :  PASS : verifyFieldvalues_Method	: Field Name - [ additionalneeds ] : Expected Value - [ Breakfast ] : Actual Value - [ Breakfast ]
+  2019.11.14.11.59.07  :  INFO : verifyFieldvalues_Method 	: Field Name - [ bookingdates ]
+  2019.11.14.11.59.07  :  PASS : verifyFieldvalues_Method	: Field Name - [ checkin ] : Expected Value - [ 2018-01-01 ] : Actual Value - [ 2018-01-01 ]
+  2019.11.14.11.59.07  :  PASS : verifyFieldvalues_Method	: Field Name - [ checkout ] : Expected Value - [ 2018-01-01 ] : Actual Value - [ 2018-01-01 ]
+  2019.11.14.11.59.07  :  PASS : verifyFieldvalues_Method	: Field Name - [ totalprice ] : Expected Value - [ 222 ] : Actual Value - [ 222 ]
+  2019.11.14.11.59.07  :  PASS : verifyFieldvalues_Method	: Field Name - [ depositpaid ] : Expected Value - [ true ] : Actual Value - [ true ]
+  2019.11.14.11.59.07  :  PASS : verifyFieldvalues_Method	: Field Name - [ lastname ] : Expected Value - [ Doe ] : Actual Value - [ Doe ]
+  2019.11.14.11.59.07  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.59.07  :  INFO : Test Case Execution : Test Execution COMPLETED for Test Case - [ API_Get ]
+  2019.11.14.11.59.07  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.59.07  :  INFO : Test Case Execution : Test Execution STARTED for Test Case - [ API_Delete ]
+  2019.11.14.11.59.07  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.59.08  :  INFO : deleteBooking_Method 		: Delete API Call completed for deleting the Booking. Booking ID : [ 13 ]
+  2019.11.14.11.59.08  :  PASS : deleteBooking_Method 		: Booking ID [ 13] removed from API 
+  2019.11.14.11.59.08  :  PASS : validateStatusCode_Method 	: Status Code : Expected : [ 201 ] : Actual : [ 201 ]
+  2019.11.14.11.59.09  :  PASS : getBooking_Method 		: Response DATA : [ Not Found ]
+  2019.11.14.11.59.09  :  PASS : validateStatusCode_Method 	: Status Code : Expected : [ 404 ] : Actual : [ 404 ]
+  2019.11.14.11.59.09  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2019.11.14.11.59.09  :  INFO : Test Case Execution : Test Execution COMPLETED for Test Case - [ API_Delete ]
+  2019.11.14.11.59.09  :  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
